@@ -3,7 +3,7 @@ import random
 import sys
 import numpy as np
 
-# Initialize Pygame and its mixer
+
 pygame.init()
 pygame.mixer.init()
 
