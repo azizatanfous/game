@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Soccer Balls</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to the CSS file -->
+</head>
+<body>
+    <div id="startPage" class="start-page">
+        <h1>Catch the Soccer Balls</h1>
+        <p>Think you have what it takes? Show us your skills!</p>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <div id="gamePage" style="display:none;">
+        <div class="scoreboard">
+            <span id="score">Score: 0</span>
+            <span id="misses">Misses: 0 / 3</span>  <!-- New Miss Counter -->
+            <span id="gameOver" style="display:none;color:red;">Game Over! Click 'Restart' to try again.</span>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="message" class="game-message"></div>
+        <button id="restartButton" style="display:none;">Restart Game</button>  <!-- Restart button for post-game-over -->
+    </div>
+
+    <script src="game.js"></script>  <!-- Link to the JavaScript file -->
+</body>
+</html>
